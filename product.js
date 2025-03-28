@@ -1,3 +1,5 @@
+//Array of product objects and each product has a name,price and category
+
 const products=[
     { name: "Laptop", price: 800, category: "Electronics" },
     { name: "Phone", price: 500, category: "Electronics" },

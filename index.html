@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>
-            
-        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>PRODUCT LIST</title>
     </head>
+    <body>
+      <h1>PRODUCT LIST</h1> 
+      <div id="product-list"></div> <!--The list of product will be here in this division--> 
+      <script>
+        const products = [
+    { name: "Laptop", price: 800, category: "Electronics" },
+    { name: "Phone", price: 500, category: "Electronics" },
+    { name: "Table", price: 200, category: "Furniture" },
+    { name: "Chair", price: 100, category: "Furniture" },
+    { name: "Headphones", price: 50, category: "Electronics" },
+    { name: "Shoes", price: 70, category: "Clothing" },
+    { name: "Jacket", price: 120, category: "Clothing" },
+    { name: "Watch", price: 250, category: "Accessories" },
+    { name: "Backpack", price: 90, category: "Accessories" },
+    { name: "Sofa", price: 600, category: "Furniture" }
+];
+const productListDiv=document.getElementById("product-list");                                                                                        0
+    products.forEach((product)=>{
+        productListDiv.innerHTML+=`<p>Product:${product.name}    Price:$${product.price}
+            `;
+
+    });
+
+      </script>
+    </body>
+    </html>
